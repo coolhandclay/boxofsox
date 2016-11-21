@@ -1,0 +1,26 @@
+//EVERYTHING//
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+//NAVBAR//
+body .container .navbar-custom {
+  @include navbar($color-primary, $header-normal);
+  .mobipos .navbar-nav li a {
+    color: $white;
+    margin-top: 5px;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+//FOOTER//
+#footer {
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include footer($color-tertiary);
+  .col-xs-9 p { 
+    display: inline;
+    margin-right: 4px;
+  }
+}

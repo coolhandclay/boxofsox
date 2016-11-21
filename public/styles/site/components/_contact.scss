@@ -1,0 +1,29 @@
+.contact-page {
+	margin-top: 58px;
+}
+
+.option {
+	text-align: center;
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	.option-title {
+		font-style: bold;
+		font-size: 36px;
+	}
+	i {
+		margin: 10px;
+		font-size: 36px;
+	}
+	.option-caption {
+		font-size: 18px;
+		font-style: italic;
+		margin: 5px;
+	}
+	.option-description {
+		font-size: 14px;
+	}
+}
+
+.interest-form {
+	margin: 20px;
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

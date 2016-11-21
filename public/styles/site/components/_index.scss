@@ -1,0 +1,158 @@
+//INDEX SECTIONS//
+.bgimg-1 {
+	@include section($background1, center);
+	height: $section-big;
+}
+.bgimg-2 {
+	@include section($background2, top);
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.bgimg-3 {
+	@include section($background3, center);
+	height: $section-normal;
+}
+.divider {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include divider($color-secondary, $white);
+}
+.banner1 {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include subheader($color-secondary, $white, $font-normal);
+	top: 58px;
+}
+.banner2 {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include subheader($color-secondary, $white, $font-normal);
+	top: 752px;
+}
+.caption {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include caption(40%, $color-primary);
+}
+.btn-box {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	@include button($color-tertiary, $white);
+	margin: 5px;
+}
+.btn-back {
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: $white;
+	padding: 15px;
+	position: absolute;
+	top: 350px;
+	background-color: $color-primary;
+	border-radius: 50px;
+}
+.hashtag {
+	display: inline;
+}
+.donate-img {
+	display: inline;
+	margin: 0;
+}
+
+iframe {
+	pointer-events: none;
+	height: 400px;
+	margin: 10px;
+	border: 2px solid black;
+	&.clicked {
+		pointer-events: auto;
+	}
+}
+a {	
+	&:hover {cursor: pointer};
+}
+.subtitle {
+	font-size: 16px;
+}
+.social {
+	font-size: $font-normal;
+	color: $white;
+}
+
+//NEWSPAPER BOX//
+
+// .box {
+// 	postion: absolute;
+// 	margin-top: 70px;
+// 	margin-left: 10px;
+// 	margin-right: 10px;
+// 	margin-bottom: 5px;
+// 	border: black 3px solid;
+// 	width: 50%;
+// 	background: #990000;
+// }
+
+// .glass {
+// 	border: black 2px solid;
+// 	background: white;
+// 	margin-left: 5%;
+// 	margin-right: 5%;
+// 	height: 65%;
+// 	text-align: center;
+// }
+
+// .handle {
+// 	width: 70px;
+// 	background: black;
+// 	height: 10px;
+// 	margin-left: 10px;
+// 	margin-right: 10px;
+// 	display: inline-block;
+// 	font-size: 8px;
+// 	text-align: center;
+// 	color: white;
+// }
+
+// .pull-handle {
+// 	font-size: 12px;
+// 	margin-top: 15px;
+// 	margin-bottom: 15px;
+// 	text-align: center;
+// }
+
+// .paper{
+// 	background-color: rgba(0,0,0,0.1);
+// 	height: 100%;
+// 	margin-bottom: 10px;
+// }
+
+// .headline {
+// 	font-family: 'PT Serif', serif;
+// 	font-size: 36px;
+// }
+
+// .story {
+// 	font-size: 20px;
+// 	font-family: 'PT Serif', serif;
+// }
+
+//NAV ENHANCEMENTS//
+.mobipos {
+	position: relative;
+}
+.nav-cta {
+	position: absolute;
+	list-style-type: none;
+	right: 0px;
+	top: 10px;
+}
+.nav-cta li {
+	float: left;
+	margin-right: 20px;
+}
+
+.nav-cta li .btn {
+	border-radius: 500px;
+	color: white;
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-donate {
+	background-color: transparent;
+}
+
+.btn-involve {
+	background-color: $color-tertiary;
+}

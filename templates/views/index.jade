@@ -1,0 +1,67 @@
+extends ../layouts/default
+
+block content
+	//BODY//
+	//SPONSOR & DONATE//
+	section
+		div.container-fluid.bgimg-1
+			div.banner1 For the homeless, socks are among most needed and least donated items
+			div.btn-back
+				h4 Help us make a difference today!
+				a(href='/contact')
+					button.btn.btn-box.btn-lg SPONSOR,
+						//br
+						| ADOPT or 
+						//br
+						| BUILD
+						//br
+						| a Box
+				div(style="margin-top: 10px")
+					img.donate-img(src='http://res.cloudinary.com/dtxljpvj5/image/upload/c_scale,h_33/v1478550147/wecount_white_logo_v7fcgm.png')
+					h4.hashtag #BoxOfSox
+	//- 		div.box
+	//- 			div.pull-handle
+	//- 				span.pull DONATE
+	//- 				a(href='#')
+	//- 					span.handle PULL
+	//- 				span.pull SOCKS
+	//- 			div.glass
+	//- 				div.paper
+	//- 					h3.headline SOCKS AMONG MOST NEEDED BY HOMELESS; LEAST OFTEN DONATED
+	//- 					img(src="http://res.cloudinary.com/dtxljpvj5/image/upload/v1479251934/Clothing-Socks-icon_spprcj.png" height="90px")
+	//- 					p.story 1 in 5 homeless people don't visit shelters, where the majority of socks are donated.
+	//- 					div.banner
+	//- 						h2 Help us make a difference today! #BoxOfSox
+	//- 					a(href='/contact')
+	//- 						button.btn.btn-box.btn-lg SPONSOR, ADOPT or BUILD a #BoxOfSox
+	//- 				hr
+	//MESSAGE//
+	div.divider
+		h3 By converting newspaper boxes into free boxes of soxes...
+	//LOCATIONS & VIDEO//
+	section
+		div.container-fluid.bgimg-2#location
+			div.container-fluid.map-container
+				h3 Find a #BoxofSox
+				p We've placed boxes throughout Seattle - from Northgate down to White Center. And with your help we're adding more in Seattle and beyond!
+				div.row
+					div.col-sm-6
+						iframe(src="https://www.google.com/maps/d/embed?mid=1X7ta73w-OUSeZwlxCR6dlX182Mw")
+					div.col-sm-6
+						iframe(src="https://www.youtube.com/embed/961xHgvdBfA" frameborder="0" allowfullscreen)
+				p Need Socks? Take a pair from a box. Have Socks? Leave a pair in a box. It's that simple!
+	//MESSAGE//
+	div.divider
+		h3 ...we're bringing warm feetses to the streetses!
+	//COMMUNITY & SOCIAL//
+	section
+		div.container-fluid.bgimg-3
+			div.caption
+				div
+					a(href='https://www.facebook.com/WeCount/?ref=page_internal' target='_blank')
+						span.social Check us out 
+							img(src='http://res.cloudinary.com/dtxljpvj5/image/upload/v1479252622/square-facebook-512_utmx9z.png' height= '30px')
+				div
+					a(href='http://www.wecount.org/' target="_blank")
+						span.social Learn more @ WeCount.org
+	script(src='/js/noscrollmap.js')

@@ -1,0 +1,60 @@
+//NAVBAR//
+@mixin navbar($color, $height) {
+	background-color: $color;
+	height: $height;
+	color: $white;
+}
+
+//FOOTER//
+@mixin footer($color) {
+  padding-bottom: 20px;
+  background-color: $color;
+  text-align: center;
+}
+
+//INDEX//
+@mixin section($image, $position) {
+	position: relative;
+  	background-attachment: fixed;
+  	background-position: $position;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	background-image: $image;
+	text-align: center;
+}
+@mixin divider($color, $font-color) {
+	background-color: $color;
+	border-top: solid $header-normal $color-primary;
+	border-bottom: solid $header-normal $color-primary;
+	text-align: center;
+	position: relative;
+	color: $font-color;
+	background-color: $color;
+	padding: 50px 80px;
+}
+@mixin subheader($color, $font-color, $font-size) {
+	position: absolute;
+	left: 0;
+	font-style: italic;
+	width: 100%;
+	text-align: center;
+	background-color: $color;
+	color: $font-color;
+	font-size: $font-size;
+	padding: $font-size/4;
+}
+@mixin button($color, $font-color) {
+	&:hover {color: $color-complimentary}
+	background-color: $color;
+	color: $font-color;
+	font-size: 36px;
+}
+@mixin caption($vertical, $color) {
+	background-color: $color;
+	position: absolute;
+  	top: $vertical;
+  	left: 5%;
+  	text-align: center;
+  	border-radius: 70px;
+  	padding: 20px;
+}

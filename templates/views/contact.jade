@@ -1,0 +1,50 @@
+extends ../layouts/default
+	
+block content
+	div.container-fluid.contact-page
+		div.row
+			div.col-sm-4
+				div.option
+					div.option-title SPONSOR
+					i.fa.fa-building
+					div.option-caption Aliquam sit amet dolor in nulla finibus ultricies non aliquam tortor.
+					div.option-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat lectus, lobortis at enim ultrices, viverra facilisis erat. Morbi condimentum leo nec elit viverra sodales. Nam elit magna, condimentum sed diam sed, ultricies commodo nisl. 
+			div.col-sm-4
+				div.option
+					div.option-title ADOPT
+					i.fa.fa-users
+					div.option-caption Aliquam sit amet dolor in nulla finibus ultricies non aliquam tortor.
+					div.option-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat lectus, lobortis at enim ultrices, viverra facilisis erat. Morbi condimentum leo nec elit viverra sodales. Nam elit magna, condimentum sed diam sed, ultricies commodo nisl.
+			div.col-sm-4
+				div.option
+					div.option-title BUILD
+					i.fa.fa-wrench
+					div.option-caption Aliquam sit amet dolor in nulla finibus ultricies non aliquam tortor.
+					div.option-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque erat lectus, lobortis at enim ultrices, viverra facilisis erat. Morbi condimentum leo nec elit viverra sodales. Nam elit magna, condimentum sed diam sed, ultricies commodo nisl. 
+	.container.interest-form
+		if enquirySubmitted
+			h3 Thanks for getting in touch.
+		else
+			.row: .col-sm-8.col-md-6
+				form(method='post')
+					input(type='hidden', name='action', value='contact')
+					.form-group(class=validationErrors.name ? 'has-error' : null)
+						label Name
+						input(type='text', name='name.full', value=formData['name.full']).form-control
+					.form-group(class=validationErrors.email ? 'has-error' : null)
+						label Email
+						input(type='email', name='email', value=formData.email).form-control
+					.form-group
+						label Phone
+						input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control
+					.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
+						label What are you interested in?
+						select(name='enquiryType').form-control
+							option(value='') (select one)
+							each type in enquiryTypes
+								option(value=type.value, selected=formData.enquiryType == type.value)= type.label
+					.form-group(class=validationErrors.message ? 'has-error' : null)
+						label Message
+						textarea(name='message', placeholder='Leave us a message...' rows=4).form-control= formData.message
+					.form-actions
+						button(type='submit').btn.btn-primary Send
