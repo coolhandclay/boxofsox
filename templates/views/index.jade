@@ -5,13 +5,14 @@ block content
 	//SPONSOR & DONATE//
 	section
 		div.container-fluid.bgimg-1
-			div.banner1 For the homeless, socks are among most needed and least donated items
+			div.banner1 Clean socks are one of the most important items for people experiencing homelessness
 			div.btn-back
 				h4 Help us make a difference today!
 				a(href='/contact')
 					button.btn.btn-box.btn-lg SPONSOR, ADOPT or BUILD a Box
 				div(style="margin-top: 10px")
-					img.donate-img(src='http://res.cloudinary.com/dtxljpvj5/image/upload/c_scale,h_33/v1478550147/wecount_white_logo_v7fcgm.png')
+					a(href='http://www.wecount.org/' target="_blank")
+						img.donate-img(src='http://res.cloudinary.com/dtxljpvj5/image/upload/c_scale,h_33/v1478550147/wecount_white_logo_v7fcgm.png')
 					h4.hashtag #BoxOfSox
 	//- 		div.box
 	//- 			div.pull-handle
@@ -31,30 +32,28 @@ block content
 	//- 				hr
 	//MESSAGE//
 	div.divider
-		h3 By converting newspaper boxes into free boxes of soxes...
+		div.container-fluid.map-container#location
+			h3 Find a #BoxofSox
+			p Need Socks? Take a pair from a box. Have Socks? Leave a pair in a box. It's that simple!
+			iframe.map(src="https://www.google.com/maps/d/embed?mid=1X7ta73w-OUSeZwlxCR6dlX182Mw")
 	//LOCATIONS & VIDEO//
 	section
-		div.container-fluid.bgimg-2#location
-			div.container-fluid.map-container
-				h3 Find a #BoxofSox
-				p We've placed boxes throughout Seattle - from Northgate down to White Center. And with your help we're adding more in Seattle and beyond!
-				div.row
-					div.col-sm-6
-						iframe(src="https://www.google.com/maps/d/embed?mid=1X7ta73w-OUSeZwlxCR6dlX182Mw")
-					div.col-sm-6
-						iframe(src="https://www.youtube.com/embed/961xHgvdBfA" frameborder="0" allowfullscreen)
-				p Need Socks? Take a pair from a box. Have Socks? Leave a pair in a box. It's that simple!
+		div.container-fluid.bgimg-2
+			h4 We've placed boxes from Northgate to White Center - #[a(href='mailto:Info@WeCount.org') contact us] to join our program.
+			iframe.video(src="https://www.youtube.com/embed/MM7G73nKzA8" frameborder="0" allowfullscreen)
 	//MESSAGE//
 	div.divider
-		h3 ...we're bringing warm feetses to the streetses!
+		h3 By providing people 24/7 access to waterproof boxes of socks, we can all meet a critical need
 	//COMMUNITY & SOCIAL//
 	section
 		div.container-fluid.bgimg-3
 			div.caption
 				div
-					a(href='https://www.facebook.com/WeCount/?ref=page_internal' target='_blank')
-						span.social Check us out 
+					span.social Check us out
+						a(href='https://www.facebook.com/WeCount/?ref=page_internal' target='_blank')
 							img(src='http://res.cloudinary.com/dtxljpvj5/image/upload/v1479252622/square-facebook-512_utmx9z.png' height= '30px')
+						a(href='https://twitter.com/wecountorg' target='_blank')
+							img(src='http://res.cloudinary.com/dtxljpvj5/image/upload/v1480816620/Twitter-icon_rwdsvs.png' height= '30px')
 				div
 					a(href='http://www.wecount.org/' target="_blank")
 						span.social Learn more @ WeCount.org

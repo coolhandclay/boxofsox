@@ -52,19 +52,15 @@ html
 			nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
 				div.container-fluid.mobipos
 					div.navbar-header
-						a.navbar-brand(href='/')
-							img.img-responsive(src='http://res.cloudinary.com/dtxljpvj5/image/upload/c_scale,h_33/v1478550147/wecount_white_logo_v7fcgm.png')
+						a(href='http://wecount.org' target='_blank' style='float:left; height: 100%; padding: 0px; margin: 0px')
+									img.img-responsive(src='http://res.cloudinary.com/dtxljpvj5/image/upload/v1480885585/brought_wecount_final_ehjmwx.png' style='height: 60px; top: 2px')
 						ul.nav.navbar-nav.hidden-xs
 							li
 								a(href='/#location')= "#BoxOfSox Locations "
 									i.fa.fa-map-marker
-						ul.nav.navbar-nav.hidden-sm.hidden-md.hidden-lg
-							li
-								a(href='/#location')= "#BoxOfSox "
-									i.fa.fa-map-marker
 					ul.pull-right.nav-cta
 						li
-							a
+							a(href='mailto:info@wecount.org')
 								button.btn.btn-donate DONATE
 						li
 							a(href='/contact')
@@ -89,23 +85,25 @@ html
 
 		//- FOOTER
 		div.container-fluid#footer
-			h4 About
-			p  A leading cause of poverty is a lack of personal community support, the failing of a social safety-net that keeps us all from falling between the cracks. WeCount is designed to strengthen our local safety-nets by helping people connect and support each other with their gently-used items and donated resources. 	
+			p Help grow the #BoxOfSox through a tax-deductible donation to WeCount, or just drop off socks at your neighborhood box! Please contact us at #[a(href='mailto:Info@WeCount.org') info@WeCount.org] to donate directly.  WeCount is always looking for new volunteers to help us with street outreach, spreading the word, growing our non-profit business, and technical development.  
 			hr
-			div.col-xs-3
-				a(href='http://www.wecount.org/' target="_blank")
+			div.col-xs-4
+				p(style='display: inline') Brought to you by 
+				a(href='http://www.wecount.org/' target="_blank" style='display: inline')
 					img(src='http://res.cloudinary.com/dtxljpvj5/image/upload/v1479235418/footer-logo_hfdnib.png')
-			div.col-xs-9
+				br
+				p What is #[a(href='http://www.wecount.org' target='_blank') WeCount.org]?
+			div.col-xs-8
 				a(href="/contact") Sponsor
-				p |
+				p(style='display: inline') |
 				a(href="/contact") Adopt
-				p |
+				p(style='display: inline') |
 				a(href="/contact") Build
-				p |
+				p(style='display: inline') |
 				a(href="#") Donate
-				p |
+				p(style='display: inline') |
 				a(href="#location") Locations
-				p |
+				p(style='display: inline') |
 				a(href='http://www.wecount.org/' target="_blank") WeCount.org
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone

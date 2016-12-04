@@ -1,14 +1,20 @@
 //INDEX SECTIONS//
 .bgimg-1 {
-	@include section($background1, center);
+	@include section($background1, 50% 75%);
 	height: $section-big;
 }
 .bgimg-2 {
-	@include section($background2, top);
+	position: relative;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .bgimg-3 {
-	@include section($background3, center);
+	@include section($background3, 50% 25%);
 	height: $section-normal;
 }
 .divider {
@@ -18,7 +24,7 @@
 .banner1 {
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include subheader($color-secondary, $white, $font-normal);
-	top: 58px;
+	top: 65px;
 }
 .banner2 {
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,13 +58,20 @@
 }
 
 iframe {
-	pointer-events: none;
-	height: 400px;
 	margin: 10px;
 	border: 2px solid black;
+}
+.map {
+	pointer-events: none;
 	&.clicked {
 		pointer-events: auto;
 	}
+	height: 600px;
+	width: 80%;
+}
+.video {
+	height: 500px;
+	width: 80%;
 }
 a {	
 	&:hover {cursor: pointer};
