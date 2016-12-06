@@ -19,8 +19,4 @@ body .container .navbar-custom {
 #footer {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   @include footer($color-tertiary);
-  .col-xs-9 p { 
-    display: inline;
-    margin-right: 4px;
-  }
 }

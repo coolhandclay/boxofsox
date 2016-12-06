@@ -9,7 +9,10 @@ html
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
-		title= title || 'BoxofSox'
+
+		title= title || '#BoxofSox | WeCount.org'
+		meta(name="description" content="WeCount.org is helping people donate socks to the homeless community by converting newspaper boxes into boxes of socks.")
+		meta(name="keywords" content="box of sox,box of socks,wecount.org,wecount,we count,boxes of socks, newspaper box of socks,sock drive,socks donation,homeless socks,donate socks,homeless clean socks,help homeless socks")
 		link(rel="shortcut icon", href="http://res.cloudinary.com/dtxljpvj5/image/upload/c_scale,h_30/v1479256953/Screen_Shot_2016-11-15_at_4.41.03_PM_p3zmdw.png", type="image/x-icon")
 
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
@@ -94,17 +97,18 @@ html
 				br
 				p What is #[a(href='http://www.wecount.org' target='_blank') WeCount.org]?
 			div.col-xs-8
-				a(href="/contact") Sponsor
-				p(style='display: inline') |
-				a(href="/contact") Adopt
-				p(style='display: inline') |
-				a(href="/contact") Build
-				p(style='display: inline') |
-				a(href="#") Donate
-				p(style='display: inline') |
-				a(href="#location") Locations
-				p(style='display: inline') |
-				a(href='http://www.wecount.org/' target="_blank") WeCount.org
+				div
+					a(href="/contact") Sponsor
+					p(style='display: inline') |
+					a(href="/contact") Adopt
+					p(style='display: inline') |
+					a(href="/contact") Build
+				div
+					a(href="#") Donate
+					p(style='display: inline') |
+					a(href="#location") Locations
+					p(style='display: inline') |
+					a(href='http://www.wecount.org/' target="_blank") WeCount
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone
 		if user && user.canAccessKeystone

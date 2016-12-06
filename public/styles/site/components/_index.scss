@@ -1,4 +1,5 @@
 //INDEX SECTIONS//
+
 .bgimg-1 {
 	@include section($background1, 50% 75%);
 	height: $section-big;
@@ -19,7 +20,7 @@
 }
 .divider {
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	@include divider($color-secondary, $white);
+	@include divider($color-secondary, $white, 30px, 50px);
 }
 .banner1 {
 	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -67,7 +68,7 @@ iframe {
 		pointer-events: auto;
 	}
 	height: 600px;
-	width: 80%;
+	width: 100%;
 }
 .video {
 	height: 500px;
@@ -149,7 +150,7 @@ a {
 	position: absolute;
 	list-style-type: none;
 	right: 0px;
-	top: 10px;
+	top: 15px;
 }
 .nav-cta li {
 	float: left;
@@ -168,4 +169,36 @@ a {
 
 .btn-involve {
 	background-color: $color-tertiary;
+}
+
+@media (max-width: 600px) {
+	.bgimg-1 {
+		@include section($background1, 50% 75%);
+		height: $section-big;
+	}
+	.btn-box {
+		font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		@include button($color-tertiary, $white);
+		margin: 0px;
+	}
+	.btn-back {
+		font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: $white;
+		padding: 10px 0px;
+		position: absolute;
+		top: 350px;
+		left: 0px;
+		background-color: $color-primary;
+		border-radius: 50px;
+	}
+	.divider {
+		font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		@include divider($color-secondary, $white, 20px, 10px);
+	}
+	.map {
+		height: 400px;
+	}
+	.video {
+		height: 300px;
+	}
 }

@@ -24,7 +24,7 @@
 	background-image: $image;
 	text-align: center;
 }
-@mixin divider($color, $font-color) {
+@mixin divider($color, $font-color, $padding-sides, $padding-top) {
 	background-color: $color;
 	border-top: solid $header-normal $color-primary;
 	border-bottom: solid $header-normal $color-primary;
@@ -32,7 +32,7 @@
 	position: relative;
 	color: $font-color;
 	background-color: $color;
-	padding: 50px 80px;
+	padding: $padding-sides $padding-top;
 }
 @mixin subheader($color, $font-color, $font-size) {
 	position: absolute;
