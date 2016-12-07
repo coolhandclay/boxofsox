@@ -63,8 +63,10 @@ html
 									i.fa.fa-map-marker
 					ul.pull-right.nav-cta
 						li
-							a(href='mailto:info@wecount.org')
-								button.btn.btn-donate DONATE
+							form(action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank")
+								input(type="hidden" name="cmd" value="_s-xclick")
+								input(type="hidden" name="hosted_button_id" value="SELP9LTBW3ZVU")
+								button.btn.btn-donate(name="submit") DONATE
 						li
 							a(href='/contact')
 								button.btn.btn-involve ADD A BOX
