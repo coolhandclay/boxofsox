@@ -9,40 +9,43 @@
   	background-attachment: fixed;
   	background-repeat: no-repeat;
   	background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 	background-color: white;
 	text-align: center;
 	padding: 20px;
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .bgimg-3 {
 	@include section($background3, 50% 25%);
 	height: $section-normal;
 }
 .divider {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include divider($color-secondary, $white, 30px, 50px);
 }
 .banner1 {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include subheader($color-secondary, $white, $font-normal);
 	top: 65px;
 }
 .banner2 {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include subheader($color-secondary, $white, $font-normal);
 	top: 752px;
 }
 .caption {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include caption(40%, $color-primary);
 }
 .btn-box {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include button($color-tertiary, $white);
 	margin: 5px;
 }
 .btn-back {
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: $white;
 	padding: 15px;
 	position: absolute;
@@ -160,7 +163,7 @@ a {
 .nav-cta li .btn {
 	border-radius: 500px;
 	color: white;
-	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .btn-donate {
@@ -177,12 +180,12 @@ a {
 		height: $section-big;
 	}
 	.btn-box {
-		font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		@include button($color-tertiary, $white);
 		margin: 0px;
 	}
 	.btn-back {
-		font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: $white;
 		padding: 10px 0px;
 		position: absolute;
@@ -192,7 +195,7 @@ a {
 		border-radius: 50px;
 	}
 	.divider {
-		font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		@include divider($color-secondary, $white, 20px, 10px);
 	}
 	.map {
