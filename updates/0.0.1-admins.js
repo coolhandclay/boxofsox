@@ -10,6 +10,7 @@
 exports.create = {
 	User: [
 		{ 'name.first': 'Admin', 'name.last': 'User', 'email': 'clayandrews13@gmail.com', 'password': 'superman1', 'isAdmin': true },
+		{ 'name.first': 'Oscar', 'name.last': 'Fossum', 'email': 'oscar@wecount.org', 'password': 'admin', 'isAdmin': true }
 	],
 };
 
