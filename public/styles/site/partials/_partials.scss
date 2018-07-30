@@ -40,7 +40,6 @@
 @mixin subheader($color, $font-color, $font-size) {
 	position: absolute;
 	left: 0;
-	font-style: italic;
 	width: 100%;
 	text-align: center;
 	background-color: $color;
